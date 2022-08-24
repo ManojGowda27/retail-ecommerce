@@ -10,13 +10,26 @@
 .left {
     display: flex;
     align-items: center;
+    flex-end: left;
     gap: 5px;
+}
+
+.searchContainer {
+    border: 1px solid lightgray;
+    align-items: center;
+    display: flex;
+}
+
+.input {
+    border: none;
 }
 
 .center {
     display: grid;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .right {

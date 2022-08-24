@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { ShoppingCartOutlined } from "@material-ui/icons";
+import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import { Badge } from "@material-ui/core";
 
 const Navbar = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
         <div className="left">
           <span>EN</span>
           <div className="searchContainer">
-            <input type="text" />
-            <i></i>
+            <input className="input" type="text" />
+            <Search />
           </div>
         </div>
         <div className="center">
