@@ -23,3 +23,23 @@ export const sliderItems = [
     bg: "#C7D6D5",
   },
 ];
+
+export const categories = [
+  {
+    id: 1,
+    img: require("./images/2.jpeg"),
+    title: "TOPS",
+  },
+  {
+    id: 2,
+    img: require("./images/9.jpeg"),
+    title: "JACKETS",
+  },
+  {
+    id: 3,
+    img: require("./images/8.jpeg"),
+    title: "LOUNGEWEAR",
+  },
+];
+
+export const popularProducts = [];

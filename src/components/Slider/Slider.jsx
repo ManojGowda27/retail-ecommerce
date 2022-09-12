@@ -55,6 +55,9 @@ const Button = styled.button`
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  border: solid 3px #031927;
+  border-radius: 3px;
+  box-shadow: 10px #031927;
 `;
 
 const Arrow = styled.div`
@@ -101,7 +104,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Description>{item.description}</Description>
-              <Button>Shop Now</Button>
+              <Button margin>Shop Now</Button>
             </InfoContainer>
           </Slide>
         ))}
