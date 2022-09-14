@@ -1,7 +1,7 @@
 export const sliderItems = [
   {
     id: 1,
-    img: require("./images/5.png"),
+    img: require("./images/1.png"),
     title: "Summer Sale",
     description: "No compromise on style! Flat 50 on new arrivals",
     bg: "#EDFFD9",
@@ -9,7 +9,7 @@ export const sliderItems = [
 
   {
     id: 2,
-    img: require("./images/7.png"),
+    img: require("./images/2.png"),
     title: "Summer Sale",
     description: "No compromise on style! Flat 50 on new arrivals",
     bg: "#B3DEE2",
@@ -17,7 +17,7 @@ export const sliderItems = [
 
   {
     id: 3,
-    img: require("./images/6.png"),
+    img: require("./images/3.png"),
     title: "Summer Sale",
     description: "No compromise on style! Flat 50 on new arrivals",
     bg: "#C7D6D5",
@@ -32,14 +32,47 @@ export const categories = [
   },
   {
     id: 2,
-    img: require("./images/9.jpeg"),
+    img: require("./images/3.jpeg"),
     title: "JACKETS",
   },
   {
     id: 3,
-    img: require("./images/8.jpeg"),
+    img: require("./images/4.jpeg"),
     title: "LOUNGEWEAR",
   },
 ];
 
-export const popularProducts = [];
+export const popularProducts = [
+  {
+    id: 1,
+    img: require("./images/5.png"),
+  },
+  {
+    id: 2,
+    img: require("./images/6.png"),
+  },
+  {
+    id: 3,
+    img: require("./images/7.png"),
+  },
+  {
+    id: 4,
+    img: require("./images/8.png"),
+  },
+  {
+    id: 5,
+    img: require("./images/9.png"),
+  },
+  {
+    id: 6,
+    img: require("./images/10.png"),
+  },
+  {
+    id: 7,
+    img: require("./images/11.png"),
+  },
+  {
+    id: 8,
+    img: require("./images/12.png"),
+  },
+];

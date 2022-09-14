@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Announcements from "../components/Announcement/Announcements";
 import Slider from "../components/Slider/Slider";
 import Categories from "../components/Categories/Categories";
+import Products from "../components/Products/Products";
 
 const Landingpage = () => {
   return (
@@ -10,7 +11,8 @@ const Landingpage = () => {
       <Announcements />
       <Navbar />
       <Slider />
-      <Categories/>
+      <Categories />
+      <Products />
     </div>
   );
 };
