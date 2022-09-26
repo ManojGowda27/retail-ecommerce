@@ -1,8 +1,8 @@
-import LandingPage from "./pages/Landingpage";
 import React from "react";
+import Productlist from "./pages/Productlist";
 
 const App = () => {
-  return <LandingPage />;
+  return <Productlist />;
 };
 
 export default App;
