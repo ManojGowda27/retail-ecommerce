@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const Announcements = () => {
-  return <Container>Super Deal! Free shipping on all orders.</Container>;
+  return <Container>Free shipping on all orders.</Container>;
 };
 
 export default Announcements;

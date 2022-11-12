@@ -5,12 +5,14 @@ import Announcement from "../components/Announcement/Announcements";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Newsletter from "../components/Newsletter/Newsletter";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   display: flex;
   padding: 50px;
+  ${mobile({ padding: "10px", flexDirection: "column" })}
 `;
 
 const ImgContainer = styled.div``;
@@ -19,11 +21,13 @@ const Img = styled.img`
   width: 100%;
   height: 70vh;
   object-fit: cover;
+  ${mobile({ height: "50vh" })}
 `;
 
 const InfoContainer = styled.div`
   flex: 1;
   padding: 0px 50px;
+  ${mobile({ padding: "10px" })}
 `;
 
 const Title = styled.h1`
@@ -40,6 +44,7 @@ const FilterContainer = styled.div`
   justify-content: space-between;
   margin: 30px 0px;
   width: 30%;
+  ${mobile({ width: "100%" })}
 `;
 const Filter = styled.div`
   padding: 20px;
@@ -75,8 +80,9 @@ const FilterSizeOption = styled.option``;
 const AddContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 50%;
-  justify-content: center;
+  width: 30%;
+  justify-content: space-between;
+  ${mobile({ width: "100%" })}
 `;
 
 const AmountContainer = styled.div`
@@ -119,7 +125,12 @@ const Product = () => {
         </ImgContainer>
         <InfoContainer>
           <Title>Denim Jumpsuit</Title>
-          <Description>gfcjfmyjfjmgfmjfgmfytdfhytfhutt</Description>
+          <Description>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Description>
           <Price>$80</Price>
           <FilterContainer>
             <Filter>

@@ -5,9 +5,10 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import Landingpage from "./pages/Landingpage";
+import Products from "./components/Products/Products";
 
 const App = () => {
-  return <Cart />;
+  return <Landingpage />;
 };
 
 export default App;

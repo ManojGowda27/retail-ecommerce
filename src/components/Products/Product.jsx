@@ -3,8 +3,8 @@ import {
   SearchOutlined,
   ShoppingCartOutlined,
 } from "@material-ui/icons";
-import React from "react";
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 const Info = styled.div`
   opacity: 0;
@@ -25,24 +25,25 @@ const Info = styled.div`
 const Container = styled.div`
   flex: 1;
   margin: 5px;
-  min-width: 420px;
-  height: 490px;
+  min-width: 280px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f5fbfd;
   position: relative;
-
   &:hover ${Info} {
     opacity: 1;
   }
 `;
+
 const Circle = styled.div`
   width: 300px;
   height: 300px;
   border-radius: 50%;
   background-color: white;
   position: absolute;
+  ${mobile({ width: "80vw", height: "45vh" })}
 `;
 
 const Image = styled.img`
@@ -54,15 +55,15 @@ const Icon = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px;
-  background-color: white;
-
+  margin: 10px;
+  transition: all 0.5s ease;
   &:hover {
     background-color: #e9f5f5;
-    tranform: scale(1.1);
+    transform: scale(1.1);
   }
 `;
 

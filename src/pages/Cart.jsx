@@ -4,11 +4,13 @@ import styled from "styled-components";
 import Announcements from "../components/Announcement/Announcements";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 20px;
+  ${mobile({ padding: "10px" })}
 `;
 
 const Title = styled.h1`
@@ -34,7 +36,9 @@ const TopButton = styled.button`
   color: ${(props) => props.type === "filled" && "white"};
 `;
 
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+  ${mobile({ display: "none" })}
+`;
 
 const TopText = styled.span`
 text-decoration: underline;
@@ -45,6 +49,7 @@ margin: 0px 10px;
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 const Information = styled.div`
@@ -54,6 +59,7 @@ const Information = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 const ProductDetail = styled.div`
@@ -91,6 +97,7 @@ const PriceDetail = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  ${mobile({ paddingLeft: "160px" })}
 `;
 
 const ProductQuantity = styled.div`
@@ -102,11 +109,13 @@ const ProductQuantity = styled.div`
 const Quantity = styled.span`
   margin: 10px;
   font-size: 15px;
+  ${mobile({ margin: "10px 15px" })}
 `;
 
 const Price = styled.span`
   font-size: 25px;
   font-weight: 300;
+  ${mobile({ marginBottom: "20px" })}
 `;
 
 const Summary = styled.div`
@@ -192,9 +201,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductQuantity>
-                  <Add />
-                  <Quantity>1</Quantity>
                   <Remove />
+                  <Quantity>1</Quantity>
+                  <Add />
                 </ProductQuantity>
                 <Price>$ 60</Price>
               </PriceDetail>
@@ -220,9 +229,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductQuantity>
-                  <Add />
-                  <Quantity>1</Quantity>
                   <Remove />
+                  <Quantity>1</Quantity>
+                  <Add />
                 </ProductQuantity>
                 <Price>$ 20</Price>
               </PriceDetail>
